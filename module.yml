@@ -1,0 +1,11 @@
+api: "1.0"
+name: "rankings"
+type: node
+script: index.js
+config:
+  - name: Scoresheet
+    fields:
+      - name: hideNegatives
+        display: Hide negative scores
+        type: boolean
+        default: true

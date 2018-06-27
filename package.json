@@ -1,0 +1,29 @@
+{
+  "name": "rankings",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/FirstLegoLeague/rankings.git",
+  "author": "Idan Stark <idanstark42@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "set MODULE_TOURNAMENT_URL=http://localhost:3000&& set DEV=true&&set MODULE_SCORING_URL=http://localhost:3000&& node ./index.js",
+    "prod": "node ./index.js"
+  },
+  "devDependencies": {
+    "eslint": "^5.0.1",
+    "eslint-config-standard": "^11.0.0",
+    "eslint-plugin-import": "^2.13.0",
+    "eslint-plugin-node": "^6.0.1",
+    "eslint-plugin-promise": "^3.8.0",
+    "eslint-plugin-standard": "^3.1.0"
+  },
+  "dependencies": {
+    "@first-lego-league/ms-configuration": "^1.0.4",
+    "@first-lego-league/ms-correlation": "^0.0.2",
+    "@first-lego-league/ms-logger": "^1.2.2",
+    "bluebird": "^3.5.1",
+    "cors": "^2.8.4",
+    "domain": "^0.0.1",
+    "express": "^4.16.3"
+  }
+}
