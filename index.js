@@ -22,11 +22,7 @@ app.use(correlationMiddleware)
 app.use(loggerMiddleware)
 app.use(cors())
 
-app.use('rankings', rankingsRouter)
-
-if (process.env.DEV) {
-  app.use(require('./lib/dev_router'))
-}
+app.use('/rankings', rankingsRouter)
 
 app.listen(port, () => {
   domain.create().run(() => {
