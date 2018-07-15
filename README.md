@@ -9,11 +9,11 @@ This module is a `node` module (see the [Module Standard](https://github.com/Fir
 
 ## Development
 1. Fork this repository or create your own branch here
-2. make some changes
-3. create a Pull Request
+2. Make some changes
+3. Create a Pull Request
 4. Wait for a CR from the code owner
-5. make sure everything is well
-6. merge
+5. Make sure everything is well
+6. Merge
 
 A few things to notice while developing:
 * Use `yarn` not `npm`
