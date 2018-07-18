@@ -34,7 +34,7 @@ app.listen(port, () => {
 process.on('SIGINT', () => {
   domain.create().run(() => {
     correlateSession()
-	logger.info('Process received SIGINT: shutting down')
-	process.exit(1)
+    logger.info('Process received SIGINT: shutting down')
+    process.exit(1)
   })
 })
