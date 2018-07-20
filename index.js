@@ -24,7 +24,7 @@ app.use(cors())
 app.use('/rankings', rankingsRouter)
 
 app.listen(port, () => {
-  logger.info(`Ranking service listening on port ${port}`)
+  logger.info(`Rankings service listening on port ${port}`)
 })
 
 process.on('SIGINT', () => {
