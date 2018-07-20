@@ -2,12 +2,16 @@
 # yarn lockfile v1
 
 
-"@first-lego-league/ms-configuration@^1.0.4":
-  version "1.0.4"
-  resolved "https://registry.yarnpkg.com/@first-lego-league/ms-configuration/-/ms-configuration-1.0.4.tgz#b3c75d6d99478af78c177c1c14a3f437a9654a71"
+"@first-lego-league/ms-configuration@^1.1.2":
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/@first-lego-league/ms-configuration/-/ms-configuration-1.1.2.tgz#4daeb2a8d4e7c964a9ef74dae82297d87afe3805"
   dependencies:
+    jsonfile-promised "^0.0.1"
     mhub "^0.9.1"
-    yamljs "^0.3.0"
+    mkdirp-promise "^5.0.1"
+    path "^0.12.7"
+    path-exists "^3.0.0"
+    read-yaml-promise "^1.0.2"
 
 "@first-lego-league/ms-correlation@^0.0.2":
   version "0.0.2"
@@ -531,6 +535,10 @@ es-to-primitive@^1.1.1:
     is-callable "^1.1.1"
     is-date-object "^1.0.1"
     is-symbol "^1.0.1"
+
+es6-promise@^2.0.0:
+  version "2.3.0"
+  resolved "https://registry.yarnpkg.com/es6-promise/-/es6-promise-2.3.0.tgz#96edb9f2fdb01995822b263dd8aadab6748181bc"
 
 escape-html@~1.0.3:
   version "1.0.3"
@@ -1205,7 +1213,7 @@ js-tokens@^3.0.2:
   version "3.0.2"
   resolved "https://registry.yarnpkg.com/js-tokens/-/js-tokens-3.0.2.tgz#9866df395102130e38f7f996bceb65443209c25b"
 
-js-yaml@^3.11.0:
+js-yaml@^3.11.0, js-yaml@^3.8.2:
   version "3.12.0"
   resolved "https://registry.yarnpkg.com/js-yaml/-/js-yaml-3.12.0.tgz#eaed656ec8344f10f527c6bfa1b6e2244de167d1"
   dependencies:
@@ -1223,6 +1231,18 @@ json-stable-stringify-without-jsonify@^1.0.1:
 jsondate@0.0.1:
   version "0.0.1"
   resolved "https://registry.yarnpkg.com/jsondate/-/jsondate-0.0.1.tgz#457a9ae01826d19faf7e87c9be263d4f3aa237fc"
+
+jsonfile-promised@^0.0.1:
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/jsonfile-promised/-/jsonfile-promised-0.0.1.tgz#5c8bafc055c3cc93a7413eb8d62634eaa4de54b8"
+  dependencies:
+    jsonfile "^2.3.1"
+
+jsonfile@^2.3.1:
+  version "2.4.0"
+  resolved "https://registry.yarnpkg.com/jsonfile/-/jsonfile-2.4.0.tgz#3736a2b428b87bbda0cc83b53fa3d633a35c2ae8"
+  optionalDependencies:
+    graceful-fs "^4.1.6"
 
 jsonfile@^4.0.0:
   version "4.0.0"
@@ -1452,7 +1472,13 @@ mixin-deep@^1.2.0:
     for-in "^1.0.2"
     is-extendable "^1.0.1"
 
-mkdirp@^0.5.1:
+mkdirp-promise@^5.0.1:
+  version "5.0.1"
+  resolved "https://registry.yarnpkg.com/mkdirp-promise/-/mkdirp-promise-5.0.1.tgz#e9b8f68e552c68a9c1713b84883f7a1dd039b8a1"
+  dependencies:
+    mkdirp "*"
+
+mkdirp@*, mkdirp@^0.5.1:
   version "0.5.1"
   resolved "https://registry.yarnpkg.com/mkdirp/-/mkdirp-0.5.1.tgz#30057438eac6cf7f8c4767f38648d6697d75c903"
   dependencies:
@@ -1776,6 +1802,20 @@ read-pkg@^2.0.0:
     load-json-file "^2.0.0"
     normalize-package-data "^2.3.2"
     path-type "^2.0.0"
+
+read-yaml-promise@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/read-yaml-promise/-/read-yaml-promise-1.0.2.tgz#604b6113f27f773790f4a7462d0427305ed0647b"
+  dependencies:
+    es6-promise "^2.0.0"
+    read-yaml "^1.0.0"
+
+read-yaml@^1.0.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/read-yaml/-/read-yaml-1.1.0.tgz#0d273ac0c95be92230dc0d4c4c4f5b8960a336d6"
+  dependencies:
+    extend-shallow "^2.0.1"
+    js-yaml "^3.8.2"
 
 regex-not@^1.0.0, regex-not@^1.0.2:
   version "1.0.2"

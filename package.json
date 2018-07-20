@@ -17,7 +17,7 @@
     "eslint-plugin-standard": "^3.1.0"
   },
   "dependencies": {
-    "@first-lego-league/ms-configuration": "^1.0.4",
+    "@first-lego-league/ms-configuration": "^1.1.2",
     "@first-lego-league/ms-correlation": "^0.0.2",
     "@first-lego-league/ms-logger": "^1.2.2",
     "axios": "^0.18.0",
