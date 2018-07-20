@@ -2,15 +2,13 @@
 # yarn lockfile v1
 
 
-"@first-lego-league/ms-configuration@^1.1.2":
-  version "1.1.2"
-  resolved "https://registry.yarnpkg.com/@first-lego-league/ms-configuration/-/ms-configuration-1.1.2.tgz#4daeb2a8d4e7c964a9ef74dae82297d87afe3805"
+"@first-lego-league/ms-configuration@1.2.0":
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@first-lego-league/ms-configuration/-/ms-configuration-1.2.0.tgz#6be5ed0331408d4c6ad7320687e7f02330e3c68c"
   dependencies:
-    jsonfile-promised "^0.0.1"
+    bluebird "^3.5.1"
     mhub "^0.9.1"
-    mkdirp-promise "^5.0.1"
     path "^0.12.7"
-    path-exists "^3.0.0"
     read-yaml-promise "^1.0.2"
 
 "@first-lego-league/ms-correlation@^0.0.3":
@@ -20,15 +18,12 @@
     jsonwebtoken "^8.2.1"
     randomatic "^3.0.0"
 
-"@first-lego-league/ms-logger@^1.2.2":
-  version "1.2.2"
-  resolved "https://registry.yarnpkg.com/@first-lego-league/ms-logger/-/ms-logger-1.2.2.tgz#c5e2623d687566745b5f782930a9ec92fd5ee15c"
+"@first-lego-league/ms-logger@^1.2.5":
+  version "1.2.5"
+  resolved "https://registry.yarnpkg.com/@first-lego-league/ms-logger/-/ms-logger-1.2.5.tgz#f670eabc7dbe8185649f0d298e0772d9f7a07a19"
   dependencies:
-    jsonfile "^4.0.0"
     on-finished "^2.3.0"
     on-headers "^1.0.1"
-    path "^0.12.7"
-    yamljs "^0.3.0"
 
 "@types/mkdirp@^0.3.29":
   version "0.3.29"
@@ -923,7 +918,7 @@ globby@^5.0.0:
     pify "^2.0.0"
     pinkie-promise "^2.0.0"
 
-graceful-fs@^4.1.2, graceful-fs@^4.1.6:
+graceful-fs@^4.1.2:
   version "4.1.11"
   resolved "https://registry.yarnpkg.com/graceful-fs/-/graceful-fs-4.1.11.tgz#0e8bdfe4d1ddb8854d64e04ea7c00e2a026e5658"
 
@@ -1232,24 +1227,6 @@ jsondate@0.0.1:
   version "0.0.1"
   resolved "https://registry.yarnpkg.com/jsondate/-/jsondate-0.0.1.tgz#457a9ae01826d19faf7e87c9be263d4f3aa237fc"
 
-jsonfile-promised@^0.0.1:
-  version "0.0.1"
-  resolved "https://registry.yarnpkg.com/jsonfile-promised/-/jsonfile-promised-0.0.1.tgz#5c8bafc055c3cc93a7413eb8d62634eaa4de54b8"
-  dependencies:
-    jsonfile "^2.3.1"
-
-jsonfile@^2.3.1:
-  version "2.4.0"
-  resolved "https://registry.yarnpkg.com/jsonfile/-/jsonfile-2.4.0.tgz#3736a2b428b87bbda0cc83b53fa3d633a35c2ae8"
-  optionalDependencies:
-    graceful-fs "^4.1.6"
-
-jsonfile@^4.0.0:
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/jsonfile/-/jsonfile-4.0.0.tgz#8771aae0799b64076b76640fca058f9c10e33ecb"
-  optionalDependencies:
-    graceful-fs "^4.1.6"
-
 jsonwebtoken@^8.2.1:
   version "8.3.0"
   resolved "https://registry.yarnpkg.com/jsonwebtoken/-/jsonwebtoken-8.3.0.tgz#056c90eee9a65ed6e6c72ddb0a1d325109aaf643"
@@ -1472,13 +1449,7 @@ mixin-deep@^1.2.0:
     for-in "^1.0.2"
     is-extendable "^1.0.1"
 
-mkdirp-promise@^5.0.1:
-  version "5.0.1"
-  resolved "https://registry.yarnpkg.com/mkdirp-promise/-/mkdirp-promise-5.0.1.tgz#e9b8f68e552c68a9c1713b84883f7a1dd039b8a1"
-  dependencies:
-    mkdirp "*"
-
-mkdirp@*, mkdirp@^0.5.1:
+mkdirp@^0.5.1:
   version "0.5.1"
   resolved "https://registry.yarnpkg.com/mkdirp/-/mkdirp-0.5.1.tgz#30057438eac6cf7f8c4767f38648d6697d75c903"
   dependencies:
@@ -2378,13 +2349,6 @@ ws@^1.1.4:
 y18n@^3.2.1:
   version "3.2.1"
   resolved "https://registry.yarnpkg.com/y18n/-/y18n-3.2.1.tgz#6d15fba884c08679c0d77e88e7759e811e07fa41"
-
-yamljs@^0.3.0:
-  version "0.3.0"
-  resolved "https://registry.yarnpkg.com/yamljs/-/yamljs-0.3.0.tgz#dc060bf267447b39f7304e9b2bfbe8b5a7ddb03b"
-  dependencies:
-    argparse "^1.0.7"
-    glob "^7.0.5"
 
 yargs-parser@^2.4.1:
   version "2.4.1"
