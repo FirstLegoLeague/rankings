@@ -5,10 +5,9 @@
 const DEFAULT_PORT = 3002
 
 const express = require('express')
-const domain = require('domain')
 const cors = require('cors')
 
-const { correlationMiddleware, correlateSession } = require('@first-lego-league/ms-correlation')
+const { correlationMiddleware } = require('@first-lego-league/ms-correlation')
 const { Logger, loggerMiddleware } = require('@first-lego-league/ms-logger')
 
 const rankingsRouter = require('./lib/rankings_router')
@@ -25,16 +24,20 @@ app.use(cors())
 app.use('/rankings', rankingsRouter)
 
 app.listen(port, () => {
-  domain.create().run(() => {
-    correlateSession()
-    logger.info(`Scoring service listening on port ${port}`)
-  })
+  logger.info(`Ranking service listening on port ${port}`)
 })
 
 process.on('SIGINT', () => {
-  domain.create().run(() => {
-    correlateSession()
-    logger.info('Process received SIGINT: shutting down')
-    process.exit(1)
-  })
+  logger.info('Process received SIGINT: shutting down')
+  process.exit(130)
+})
+
+process.on('uncaughtException', err => {
+  logger.fatal(err.message)
+  process.exit(1)
+})
+
+process.on('unhandledRejection', err => {
+  logger.fatal(err.message)
+  process.exit(1)
 })
