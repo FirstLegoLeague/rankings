@@ -21,7 +21,7 @@ app.use(correlationMiddleware)
 app.use(loggerMiddleware)
 app.use(cors())
 
-app.use('/rankings', rankingsRouter)
+app.use(rankingsRouter)
 
 app.listen(port, () => {
   logger.info(`Rankings service listening on port ${port}`)
