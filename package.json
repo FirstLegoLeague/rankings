@@ -18,7 +18,7 @@
   },
   "dependencies": {
     "@first-lego-league/ms-configuration": "1.2.0",
-    "@first-lego-league/ms-correlation": "0.0.4",
+    "@first-lego-league/ms-correlation": "0.0.5",
     "@first-lego-league/ms-logger": "^1.2.5",
     "axios": "^0.18.0",
     "bluebird": "^3.5.1",
