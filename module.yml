@@ -2,6 +2,7 @@ api: "1.0"
 name: "rankings"
 type: node
 script: index.js
+hidden: true
 config:
   - name: Scoresheet
     fields:
