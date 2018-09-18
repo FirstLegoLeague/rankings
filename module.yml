@@ -4,9 +4,8 @@ type: node
 script: index.js
 hidden: true
 config:
-  - name: Scoresheet
-    fields:
+  - fields:
       - name: hideNegatives
-        display: Hide negative scores
+        display: Show negative scores as zero
         type: boolean
         default: true
