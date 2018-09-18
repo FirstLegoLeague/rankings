@@ -1,5 +1,6 @@
 api: "1.0"
 name: "rankings"
+display: "Scoreboard"
 type: node
 script: index.js
 hidden: true
