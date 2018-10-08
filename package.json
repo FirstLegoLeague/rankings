@@ -1,5 +1,5 @@
 {
-  "name": "rankings",
+  "name": "@first-lego-league/rankings",
   "version": "1.0.1",
   "main": "index.js",
   "repository": "https://github.com/FirstLegoLeague/rankings.git",
@@ -19,7 +19,7 @@
   "dependencies": {
     "@first-lego-league/ms-configuration": "1.3.1",
     "@first-lego-league/ms-correlation": "0.0.5",
-    "@first-lego-league/ms-logger": "1.3.4",
+    "@first-lego-league/ms-logger": "1.4.0",
     "axios": "^0.18.0",
     "bluebird": "^3.5.1",
     "cors": "^2.8.4",
