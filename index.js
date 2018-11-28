@@ -6,6 +6,7 @@ const DEFAULT_PORT = 3002
 
 const express = require('express')
 const cors = require('cors')
+const projectVersion = require('project-version')
 
 const { correlationMiddleware } = require('@first-lego-league/ms-correlation')
 const { Logger, loggerMiddleware } = require('@first-lego-league/ms-logger')
@@ -16,6 +17,7 @@ const port = process.env.PORT || DEFAULT_PORT
 
 const app = express()
 const logger = new Logger()
+logger.info (`-------------------- rankings version ${projectVersion} startup --------------------`)
 
 app.use(correlationMiddleware)
 app.use(loggerMiddleware)
