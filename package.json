@@ -1,6 +1,6 @@
 {
   "name": "@first-lego-league/rankings",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "main": "index.js",
   "repository": "https://github.com/FirstLegoLeague/rankings.git",
   "author": "Idan Stark <idanstark42@gmail.com>",
