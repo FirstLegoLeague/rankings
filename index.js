@@ -17,7 +17,7 @@ const port = process.env.PORT || DEFAULT_PORT
 
 const app = express()
 const logger = new Logger()
-logger.info (`-------------------- rankings version ${projectVersion} startup --------------------`)
+logger.info(`-------------------- rankings version ${projectVersion} startup --------------------`)
 
 app.use(correlationMiddleware)
 app.use(loggerMiddleware)
