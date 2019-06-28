@@ -12,6 +12,7 @@
     "node": ">=8.x"
   },
   "devDependencies": {
+    "@first-lego-league/dev-launcher": "^0.1.2",
     "@first-lego-league/eslint-config": "^1.0.0",
     "eslint": "^5.0.1",
     "eslint-config-standard": "^11.0.0",
