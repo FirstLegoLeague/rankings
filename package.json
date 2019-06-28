@@ -1,10 +1,9 @@
 {
   "name": "@first-lego-league/rankings",
   "version": "1.0.3",
-  "main": "index.js",
   "repository": "https://github.com/FirstLegoLeague/rankings.git",
   "author": "Idan Stark <idanstark42@gmail.com>",
-  "license": "MIT",
+  "license": "GPL-3.0",
   "scripts": {
     "lint": "eslint index.js lib",
     "start": "concurrently \"yarn start:server\" \"yarn start:mocks\"",
