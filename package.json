@@ -6,7 +6,9 @@
   "author": "Idan Stark <idanstark42@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "set DEV=true&& start mhub-server&& set MODULE_TOURNAMENT_URL=http://localhost:3000&& set MODULE_SCORING_URL=http://localhost:3000&& node ./index.js"
+    "start": "concurrently \"yarn start:server\" \"yarn start:mocks\"",
+    "start:server": "devl -s tournament=http://localhost:3001 -s scoring=http://localhost:3002",
+    "start:mocks": "node ./mocks/index.js"
   },
   "engines": {
     "node": ">=8.x"
@@ -14,6 +16,7 @@
   "devDependencies": {
     "@first-lego-league/dev-launcher": "^0.1.2",
     "@first-lego-league/eslint-config": "^1.0.0",
+    "concurrently": "^4.1.1",
     "eslint": "^5.0.1",
     "eslint-config-standard": "^11.0.0",
     "eslint-plugin-chai-friendly": "^0.4.1",
