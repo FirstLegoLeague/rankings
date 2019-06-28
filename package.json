@@ -8,6 +8,9 @@
   "scripts": {
     "start": "set DEV=true&& start mhub-server&& set MODULE_TOURNAMENT_URL=http://localhost:3000&& set MODULE_SCORING_URL=http://localhost:3000&& node ./index.js"
   },
+  "engines": {
+    "node": ">=8.x"
+  },
   "devDependencies": {
     "eslint": "^5.0.1",
     "eslint-config-standard": "^11.0.0",
