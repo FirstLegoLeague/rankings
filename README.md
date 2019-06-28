@@ -1,3 +1,12 @@
+[![npm](https://img.shields.io/npm/v/@first-lego-league/rankings.svg)](https://www.npmjs.com/package/@first-lego-league/rankings)
+[![codecov](https://codecov.io/gh/FirstLegoLeague/rankings/branch/master/graph/badge.svg)](https://codecov.io/gh/FirstLegoLeague/rankings)
+[![Build status](https://ci.appveyor.com/api/projects/status/k4krkeis8vkl7w2u/branch/master?svg=true)](https://ci.appveyor.com/project/2roy999/rankings/branch/master)
+[![GitHub](https://img.shields.io/github/license/FirstLegoLeague/rankings.svg)](https://github.com/FirstLegoLeague/rankings/blob/master/LICENSE)
+
+[![David Dependency Status](https://david-dm.org/FirstLegoLeague/rankings.svg)](https://david-dm.org/FirstLegoLeague/rankings)
+[![David Dev Dependency Status](https://david-dm.org/FirstLegoLeague/rankings/dev-status.svg)](https://david-dm.org/FirstLegoLeague/rankings#info=devDependencies)
+[![David Peer Dependencies Status](https://david-dm.org/FirstLegoLeague/rankings/peer-status.svg)](https://david-dm.org/FirstLegoLeague/rankings?type=peer)
+
 # rankings
 A server-only micro-service that upon request, calculates the rankings by requesting them from the scoring service
 
