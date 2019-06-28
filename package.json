@@ -6,7 +6,7 @@
   "license": "GPL-3.0",
   "scripts": {
     "lint": "eslint index.js lib",
-    "start": "concurrently \"yarn start:server\" \"yarn start:mocks\"",
+    "start": "concurrently -k \"yarn start:server\" \"yarn start:mocks\"",
     "start:server": "devl -s tournament=http://localhost:3001 -s scoring=http://localhost:3002",
     "start:mocks": "node ./mocks/index.js"
   },
@@ -23,24 +23,23 @@
     "@first-lego-league/dev-launcher": "^0.1.2",
     "@first-lego-league/eslint-config": "^1.0.0",
     "concurrently": "^4.1.1",
-    "eslint": "^5.0.1",
-    "eslint-config-standard": "^11.0.0",
+    "eslint": "^6.0.1",
+    "eslint-config-standard": "^12.0.0",
     "eslint-plugin-chai-friendly": "^0.4.1",
     "eslint-plugin-import": "^2.13.0",
     "eslint-plugin-node": "^9.1.0",
-    "eslint-plugin-promise": "^3.8.0",
-    "eslint-plugin-standard": "^3.1.0"
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.0"
   },
   "dependencies": {
-    "@first-lego-league/ms-correlation": "0.0.5",
-    "@first-lego-league/ms-logger": "1.4.0",
-    "axios": "^0.18.0",
+    "@first-lego-league/ms-correlation": "1.0.1",
+    "@first-lego-league/ms-logger": "2.0.0",
+    "axios": "^0.19.0",
     "bluebird": "^3.5.1",
     "cors": "^2.8.4",
     "domain": "^0.0.1",
     "express": "^4.16.3",
     "express-csv": "^0.6.0",
-    "mhub": "^0.9.1",
-    "project-version": "^1.2.0"
+    "mhub": "^1.0.0"
   }
 }
