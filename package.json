@@ -20,9 +20,9 @@
     "yarn.lock"
   ],
   "devDependencies": {
-    "@first-lego-league/dev-launcher": "^0.1.2",
+    "@first-lego-league/dev-launcher": "^0.3.0",
     "concurrently": "^4.1.1",
-    "eslint": "^6.0.1",
+    "eslint": "^5.16.0",
     "eslint-config-first-lego-league": "^1.0.1",
     "eslint-config-standard": "^12.0.0",
     "eslint-plugin-chai-friendly": "^0.4.1",
@@ -37,7 +37,6 @@
     "axios": "^0.19.0",
     "bluebird": "^3.5.1",
     "cors": "^2.8.4",
-    "domain": "^0.0.1",
     "express": "^4.16.3",
     "express-csv": "^0.6.0",
     "mhub": "^1.0.0"
