@@ -9,6 +9,7 @@ exports.teams = [
   { number: 123, name: 'Genesis' },
   { number: 132, name: 'King of Hearts' },
   { number: 173, name: 'The Society of the Blind Eye' },
+  { number: 200, name: 'Team with no scores' },
   { number: 182, name: 'The blue dot' },
   { number: 534, name: 'The Fellowship of the Ring' },
   { number: 856, name: 'The Order of the Phoenix' },
